@@ -12,13 +12,13 @@ object mensajeria {
 	method despedirTodos(){
 		mensajeros.clear()
 	}
+
+	method primeroPuedeEntregar(paquete){
+		return paquete.puedeSerEntregadoPor(mensajeros.first())
+	}
 	
 	method esGrande(){
 		return mensajeros.size()>2
-	}
-	
-	method entregarPaquete(paquete){
-		
 	}
 	
 	method pesoUltimoMsjro(){
